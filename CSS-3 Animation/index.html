@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        .box {
+            height: 200px;
+            width: 200px;
+            background: red;
+            margin: 125px auto;
+            animation-name: animate;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes animate {
+            0% {
+                transform: rotateZ(0deg);
+            }
+
+            100% {
+                transform: rotateZ(360deg);
+            }
+        }
+        .box2 {
+            height: 200px;
+            width: 200px;
+            background: green;
+            margin: 125px auto;
+            animation-name: animate2;
+            animation-duration: 10s;
+            animation-timing-function: ease;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes animate2 {
+            0% {
+                transform: rotateZ(0deg);
+            }
+
+            100% {
+                transform: rotateZ(360deg);
+            }
+        }
+        .box3 {
+            height: 200px;
+            width: 200px;
+            background: blue;
+            animation-name: animate3;
+            animation-duration: 2s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes animate3 {
+            0% {
+                transform: translateX(0px);
+            }
+
+            100% {
+                transform: translateX(1550px)
+            }
+        }
+        .box4 {
+            height: 200px;
+            width: 200px;
+            background: orange;
+            margin-top: 50px;
+            animation-name: animate4;
+            animation-duration: 2s;
+            animation-timing-function: ease-out;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes animate4 {
+            0% {
+                transform: translateX(0px);
+            }
+
+            100% {
+                transform: translateX(1550px)
+            }
+        }
+        .box5 {
+            height: 200px;
+            width: 200px;
+            background: maroon;
+            margin: 100px auto;
+            animation-name: animate5;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes animate5 {
+            0% {
+                transform: scale(1);
+            }
+            25%{
+                background: red;
+            }
+            50%{
+                background: maroon;
+            }
+            75%{
+                background: red;
+            }
+
+            100% {
+                background: maroon;
+                transform: scale(2);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+
+    </div>
+    <div class="box2">
+
+    </div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+</body>
+
+</html>
